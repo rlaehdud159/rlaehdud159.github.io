@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chareset="UTF-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #logo {
+            float: left;
+            margin: 20px 0 0 20px;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 50px;
+        }
+
+        #top {
+            float: right;
+            margin: 60px 70px 0 0;
+            font-weight: bold;
+            color: #808080;
+        }
+
+        #top a {
+            text-decoration: none;
+            color: #808080;
+        }
+
+        #menu {
+            clear: both;
+            height: 40px;
+            background-color: #808080;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+            border: solid 1px #808080;
+        }
+
+        #menu li {
+            display: inline;
+            font-weight: bold;
+        }
+
+        #menu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .item {
+            margin: 0 30px 0 30px;
+        }
+
+        #main {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="logo">
+            <img src="img/blizzard.png">
+        </div>
+        <div id="top">
+            <a href="./login.html">로그인</a> | <a href="./signup.html">회원가입</a>
+        </div>
+    </div>
+    <ul id="menu">
+        <li><a href="./hw06.html"><img src="img/overwatch.jpg"></a></li>
+        <li class="item"><a href="./game.html">게임 소개</a></li>
+        <li>|</li>
+        <li class="item"><a href="./character.html">영웅</a></li>
+        <li>|</li>
+        <li class="item"><a href="./esports.html">E스포츠</a></li>
+        <li>|</li>
+        <li class="item"><a href="./notice.html">공지 사항</a></li>
+        <li>|</li>
+    </ul>
+    <div id="main">
+        <form>
+            <h3>이름을 입력하세요.</h3>
+            <p><br>이름 : <input name="name"></p>
+            <p><br></p>
+            <input type="submit" value="완료">
+            <input type="reset" value="초기화">
+        </form>
+        <br><br>
+        <form>
+            <h3>아이디를 입력하세요.</h3>
+            <p><br>아이디 : <input name="id"></p>
+            <p><br></p>
+            <input type="submit" value="완료">
+            <input type="reset" value="초기화">
+        </form>
+        <br><br>
+        <form>
+            <h3>비밀번호를 입력하세요.</h3>
+            <p><br>비밀번호 : <input type="password" name="password"></p>
+            <p><br></p>
+            <input type="submit" value="완료">
+            <input type="reset" value="초기화">
+        </form>
+        <br><br>
+        <form>
+            <h3>나이를 입력하세요.</h3>
+            <p><br>나이 : <input type="number" name="count" min="1" max="100"></p>
+            <p><br></p>
+            <input type="submit" value="완료">
+            <input type="reset" value="초기화">
+        </form>
+        <br><br>
+        <form>
+            <h3>이메일을 입력하세요.</h3>
+            <p><br>이메일 : <input type="email" name="myemail"></p>
+            <p><br></p>
+            <input type="submit" value="완료">
+            <input type="reset" value="초기화">
+        </form>
+    </div>
+
+</body>
+
+</html>
