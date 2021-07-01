@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chareset="UTF-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #logo {
+            float: left;
+            margin: 20px 0 0 20px;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 50px;
+        }
+
+        #top {
+            float: right;
+            margin: 60px 70px 0 0;
+            font-weight: bold;
+            color: #808080;
+        }
+
+        #top a {
+            text-decoration: none;
+            color: #808080;
+        }
+
+        #menu {
+            clear: both;
+            height: 40px;
+            background-color: #808080;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+            border: solid 1px #808080;
+        }
+
+        #menu li {
+            display: inline;
+            font-weight: bold;
+        }
+
+        #menu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .item {
+            margin: 0 30px 0 30px;
+        }
+
+        .input {
+            position: relative;
+            margin: 10px 0;
+        }
+
+        .input input {
+            background: transparent;
+            border: none;
+            border-bottom: solid 1px #ccc;
+            padding: 20px 0px 5px 0px;
+            font-size: 14pt;
+            width: 100%;
+        }
+
+        .input label {
+            color: #808080;
+        }
+
+        input::placeholder{
+	        color: #808080;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="logo">
+            <img src="img/blizzard.png">
+        </div>
+        <div id="top">
+            <a href="./login.html">로그인</a> | <a href="./signup.html">회원가입</a>
+        </div>
+    </div>
+    <ul id="menu">
+        <li><a href="./hw07.html"><img src="img/overwatch.jpg"></a></li>
+        <li class="item"><a href="./game.html">게임 소개</a></li>
+        <li>|</li>
+        <li class="item"><a href="./character.html">영웅</a></li>
+        <li>|</li>
+        <li class="item"><a href="./esports.html">E스포츠</a></li>
+        <li>|</li>
+        <li class="item"><a href="./notice.html">공지 사항</a></li>
+        <li>|</li>
+    </ul>
+        <form>
+            <div class="input">
+                <label for="id">이메일</label>
+                <input type="email" name="id" placeholder="Email">
+            </div>
+            <div class="input">
+                <label for="password">비밀번호</label>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit">로그인</button>
+        </form>
+
+</body>
+
+</html>

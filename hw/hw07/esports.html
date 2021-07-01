@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chareset="UTF-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #logo {
+            float: left;
+            margin: 20px 0 0 20px;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 50px;
+        }
+
+        #top {
+            float: right;
+            margin: 60px 70px 0 0;
+            font-weight: bold;
+            color: #808080;
+        }
+
+        #top a {
+            text-decoration: none;
+            color: #808080;
+        }
+
+        #menu {
+            clear: both;
+            height: 40px;
+            background-color: #808080;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+            border: solid 1px #808080;
+        }
+
+        #menu li {
+            display: inline;
+            font-weight: bold;
+        }
+
+        #menu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .item {
+            margin: 0 30px 0 30px;
+        }
+
+        #main figure {
+            display: inline-block;
+            /*image와 figcaption이 붙어서*/
+            margin: 0;
+            margin-bottom: 15px;
+            border: solid 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        #columns {
+            column-count: 2;
+        }
+
+        hr {
+            border: solid 2px #808080;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <div id="logo">
+                <a href="https://www.blizzard.com/ko-kr/" target="_blank"><img src="img/blizzard.png"></a>
+            </div>
+            <div id="top">
+                <a href="./login.html">로그인</a> | <a href="./signup.html">회원가입</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="./hw07.html"><img src="img/overwatch.jpg"></a></li>
+            <li class="item"><a href="./game.html">게임 소개</a></li>
+            <li>|</li>
+            <li class="item"><a href="./character.html">영웅</a></li>
+            <li>|</li>
+            <li class="item"><a href="./esports.html">E스포츠</a></li>
+            <li>|</li>
+            <li class="item"><a href="./notice.html">공지 사항</a></li>
+            <li>|</li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <div id="main">
+                <figure>
+                    <div>
+                        <a href="https://www.overwatchleague.com/ko-kr" target="_blank">
+                            <img widht="100px" height="100px" src="./img/overwatchleague.svg"></a>
+                    </div>
+                    <div>
+                        <h2>오버워치 리그란?</h2>
+                    </div>
+                    <div id="columns">
+                        <p>오버워치 리그는 20개 도시에 연고를 둔 팀으로 구성된 국제 e스포르 리그로, 세계 최고의 오버워치
+                            선수들을 보유하고 있습니다. 2021 시즌은 4월 17일에 시작되며 9월에 플레이오프와 그랜드 파이널로 마무리됩니다.</p>
+                        <p>오버워치 최상위권 선수들의 경쟁, 짜릿한 서사, 거액의 총상금, 푸짐한 시청자 보상, 최첨단 기술을 활용한
+                            프로덕션 품질을 선보이는 오버워치 리그는 세계 최고의 e스포츠 리그입니다.</p>
+
+                    </div>
+                </figure>
+                <figure>
+                    <div>
+                        <a href="https://overwatchleague.com/ko-kr/contenders" target="_blank">
+                            <img widht="100px" height="100px" src="./img/contenders.png"></a>
+                    </div>
+                    <div>
+                        <h2>오버워치 컨텐더스란?</h2>
+                    </div>
+                    <div id="columns">
+                        <p>오버워치 컨텐더스는 오버워치 리그를 꿈꾸는 프로 선수들을 위한 높은 수준의 토너먼트 시리즈입니다.
+                            다섯 개의 컨텐더스 지역이 있으며, 일부 지역은 오버워치 리그 아카데미 팀의 연고지입니다.
+                            각 지역에서 상위 팀들은 다양한 형식의 경쟁 속에서 솜씨를 뽐내게 됩니다.</p>
+                        <p>프로 선수 지망생 또한 지역별 오픈 디비전 프로그램을 통해 컨텐더스 출전 자격을 얻을 수 있습니다.
+                            이후 컨텐더스 트라이얼(매 시즌 개최되는 승강전 토너먼트) 진출 자격이 있는 상위 팀이 결정됩니다.
+                            좋아하는 선수가 오버워치 리그로 나아가는 길에 함께하세요!</p>
+                    </div>
+                </figure>
+
+                <figure>
+                    <div>
+                        <a href="https://overwatchleague.com/ko-kr/overwatch-world-cup" target="_blank">
+                            <img widht="100px" height="100px" src="./img/worldcup.png"></a>
+                    </div>
+                    <div>
+                        <h2>오버워치 월드컵이란?</h2>
+                    </div>
+                    <div id="columns">
+                        <p>오버워치 월드컵은 블리즈컨에서 주최하는 경쟁과 화합의 국제적 축제입니다!</p>
+                        <p>오버워치 리그, 오버워치 프로가 되는 길,
+                            경쟁전 출신의 선수들이 프로로서의 라이벌 관계는 제쳐놓고 고국과 지역의 영광을 위해 참가합니다!</p>
+                    </div>
+                </figure>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <small>
+            <hr align="left">
+            &nbsp; &nbsp; &copy; 김도영
+        </small>
+    </footer>
+</body>
+
+</html>
