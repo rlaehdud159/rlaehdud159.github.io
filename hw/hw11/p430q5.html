@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q5</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>이름</th>
+            <th>가격</th>
+            <th>개수</th>
+        </tr>
+        <tr>
+            <td id="data10"></td>
+            <td id="data20"></td>
+            <td id="data30"></td>
+        </tr>
+        <tr>
+            <td id="data11"></td>
+            <td id="data21"></td>
+            <td id="data31"></td>
+        </tr>
+        <tr>
+            <td id="data12"></td>
+            <td id="data22"></td>
+            <td id="data32"></td>
+        </tr>
+    </table>
+    <script>
+        var fruits = new Array(['사과', 21000, 10], ['참외', 18000, 20], ['귤', 15000, 30]);
+        for (var i = 0; i < 3; i++) {
+            var fname = document.getElementById("data1" + i);
+            fname.innerText = fruits[i][0];
+            var fprice = document.getElementById("data2" + i);
+            fprice.innerText = fruits[i][1];
+            var fnum = document.getElementById("data3" + i);
+            fnum.innerText = fruits[i][2]
+        }
+    </script>
+
+</body>
+
+</html>

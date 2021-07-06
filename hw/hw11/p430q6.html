@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q6</title>
+</head>
+
+<body>
+    <form>
+        <h1>내가 살아온 인생 계산하기</h1>
+        <label for="birth">생년월일 입력 : </label>
+        <input type="text" id="birth" placeholder="0000-00-00">
+        <br><br>
+    </form>
+
+    <script>
+        function calcu() {
+            var today = new Date();
+            var BirthDday = new Date();
+            var day = document.getElementById("day");
+            var old = document.getElementById("old");
+
+            var birthday = document.getElementById("birth").value;
+            var birth = birthday.split('-');
+            BirthDday.setFullYear(parseInt(birth[0]), parseInt(birth[1]), parseInt(birth[2]));
+
+            ttoday = Date.parse(today);
+            BBirthDay = Date.parse(BirthDday);
+
+            survival = ttoday - BBirthDay;
+            var survival_date = survival/1000/60/60/24;
+
+            day.innerText = survival_date;
+            old.innerText = today.getFullYear(0) - birth[0];
+        }
+    </script>
+
+    <button type="button" onclick="calcu()">나이 계산</button>
+    <br><br>
+    <div>당신은 태어나서부터 <span id="day">???</span>일 경과해서 지금은 <span id="old">???</span>살입니다.</div>
+
+
+</body>
+
+</html>
